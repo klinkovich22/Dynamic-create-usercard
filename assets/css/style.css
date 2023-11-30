@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Mukta', sans-serif;
+  font-size: 1em;
+}
+
+header{
+  width: 100vw;
+  height: 20vh;
+  margin-bottom: 2vh;
+  border: 2px solid rgb(114, 110, 124);
+  /* background-color: rgb(102, 175, 218); */
+  overflow-y: scroll;
+}
+
+main{
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+button{
+  border: 1px solid red;
+  border-radius: 50%;
+  color: red;
+  margin: 0 10px;
+}
+
+.list-header{
+  margin-bottom: 20px;
+  font-size: 2.5em;
+  font-weight: bolder;
+}
+
+.todo-list{
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+.todo-list li{
+  display: flex;
+  align-items: center;
+  margin: 10px 20px;
+}
+
+.card {
+  width: 400px;
+  height: 250px;
+  margin: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px 5px rgba(101,190,255,0.78);
+  border: 3px solid rgba(87, 170, 230, 0.78);
+
+}
+
+.card-content{
+  width: 390px;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-info{
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid grey;
+}
+
+.main-info > *{
+  margin: 20px;
+}
+
+.user-icon{
+  width: 70px;
+  height: 70px;
+}
+
+.user-info{
+  display: flex;
+  flex-direction: column;
+  font-size: 1.6em;
+  color: grey;
+}
+
+.full-name{
+  display: flex;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.full-name > *{
+  margin-right: 0.2em;
+}
+
+.addiction-info{
+  width: 100%;
+  height: 50%;
+  display: flex;
+}
+
+.contacts{
+  width: 60%;
+  height: 100%;
+  border-right: 2px solid grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.wrap-contacts{
+  display: flex;
+  align-items: center;
+}
+
+.img-icon{
+  width: 15px;
+  height: 15px;
+  margin: 0 10px;
+}
+
+.id{
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  font-weight: bolder;
+}
+
+.border-red{
+  box-shadow: 5px 5px 20px 5px rgba(255, 101, 101, 0.78);
+  border: 3px solid rgba(231, 87, 87, 0.78);
+}
