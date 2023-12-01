@@ -24,7 +24,6 @@ function createCards(arrayEl) {
 
   for (const element of arrayEl) {
 
-    const arayFemaleName = ['miriam', 'kate'];
     const card = createHTMLel('div', main, 'card');
     cardsArray.push(new Card(card, element.id));
     card.addEventListener('click', selectCard, true);
@@ -34,11 +33,11 @@ function createCards(arrayEl) {
 
     const mainInfo = createHTMLel('div', cardContent, 'main-info');
     const userIcon = createHTMLel('img', mainInfo, 'user-icon');
-    if (arayFemaleName.includes(String(element.name.firstname).toLowerCase())){
-      userIcon.setAttribute('src', './assets/img/woman.png');
+    if (Math.random()>0.5){
+      userIcon.setAttribute('src', './assets/img/cat.png');
     }
     else{
-    userIcon.setAttribute('src', './assets/img/man.png');
+    userIcon.setAttribute('src', './assets/img/another-cat.png');
     }
     const userInfo = createHTMLel('div', mainInfo, 'user-info');
     const fullName = createHTMLel('div', userInfo, 'full-name');
